@@ -5,7 +5,6 @@ import android.content.pm.PackageManager;
 
 import com.black.router.annotation.Config;
 import com.black.router.annotation.RouteConfigHelper;
-import com.black.util.CommonUtil;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -32,9 +31,7 @@ public class BlackRouter {
         try {
             mAllModuleClassName = ClassUtils.getFileNameByPackageName(context, "com.black.router.generated");
         } catch (PackageManager.NameNotFoundException e) {
-            CommonUtil.printError(context, e);
         } catch (IOException e) {
-            CommonUtil.printError(context, e);
         }
 
         for (String className : mAllModuleClassName) {
