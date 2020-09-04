@@ -31,7 +31,9 @@ public class BlackRouter {
         try {
             mAllModuleClassName = ClassUtils.getFileNameByPackageName(context, "com.black.router.generated");
         } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
         } catch (IOException e) {
+            e.printStackTrace();
         }
 
         for (String className : mAllModuleClassName) {
