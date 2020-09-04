@@ -1,2 +1,6 @@
+include ':routerProcess'
+include ':routerAnnotation'
+include ':router'
+include ':util'
 include ':app'
 rootProject.name = "BRouter"
